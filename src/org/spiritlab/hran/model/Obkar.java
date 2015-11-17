@@ -12,6 +12,10 @@ public class Obkar {
         Node tree = new NodeImpl("Root");
         tree.addChild(new NodeImpl("Second")).addChild(new NodeImpl("Third"));
         
+        Node firstLevel = new NodeImpl("First level");
+        firstLevel.addChild(new NodeImpl("F1")).addChild(new NodeImpl("F2"));
+        tree.addChild(firstLevel);
+        
         //tree.getChilds().get(0).addChild(new NodeImpl("Forc"));
         
         //Tree tree = new Tree();
